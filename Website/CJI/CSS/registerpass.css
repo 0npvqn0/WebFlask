@@ -1,0 +1,55 @@
+/*小框框的模板 */
+body {
+    font-family: Arial, sans-serif;
+    /* 使用 Arial 字体，后备字体是 sans-serif */
+    background-color: #f4f4f4;
+    /* 设置背景颜色为浅灰色 */
+    display: flex;
+    /* 使用弹性布局使内容对齐 */
+    justify-content: center;
+    /* 将内容在水平方向居中 */
+    align-items: center;
+    /* 将内容在垂直方向居中 */
+    height: 100vh;
+    /* 将页面高度设置为视窗高度的 100% */
+    margin: 0;
+    /* 删除默认的外边距 */
+}
+
+.input_con {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 添加轻微阴影以增加层次感 */
+}
+
+.input_con label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input_con input {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    /*边框为浅灰色*/
+}
+
+.input_con button {
+    width: 97%;
+    background-color: #007BFF;
+    color: white;
+    /*字的颜色*/
+    padding: 10px;
+    align-items: center;
+    border: none;
+    /*移除按钮默认边框*/
+    border-radius: 5px;
+    /*圆角*/
+    cursor: pointer;
+    /* 鼠标悬停时显示为手形 */
+}

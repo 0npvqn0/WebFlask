@@ -1,0 +1,103 @@
+/* 设置页面主体的样式 */
+body {
+    font-family: Arial, sans-serif;
+    /* 使用 Arial 字体，后备字体是 sans-serif */
+    background-color: #f4f4f4;
+    /* 设置背景颜色为浅灰色 */
+    display: flex;
+    /* 使用弹性布局使内容对齐 */
+    justify-content: center;
+    /* 将内容在水平方向居中 */
+    align-items: center;
+    /* 将内容在垂直方向居中 */
+    height: 100vh;
+    /* 将页面高度设置为视窗高度的 100% */
+    margin: 0;
+    /* 删除默认的外边距 */
+}
+
+/* 设置登录容器的样式 */
+.login-container {
+    background-color: #fff;
+    /* 设置背景颜色为白色 */
+    padding: 20px;
+    /* 添加内边距 */
+    border-radius: 5px;
+    /* 设置圆角效果 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* 添加轻微阴影以增加层次感 */
+    width: 300px;
+    /* 固定容器的宽度 */
+}
+
+/* 设置登录容器内标题的样式 */
+.login-container h2 {
+    text-align: center;
+    /* 文本居中对齐 */
+}
+
+/* 设置标签的样式 */
+.login-container label {
+    display: block;
+    /* 将标签设置为块元素 */
+    margin-bottom: 5px;
+    /* 在标签下方添加间距 */
+}
+
+/* 设置输入框的样式 */
+.login-container input {
+    width: 90%;
+    /* 输入框占满容器宽度 */
+    padding: 10px;
+    /* 添加内边距以提高用户体验 */
+    margin-bottom: 15px;
+    /* 在输入框下方添加间距 */
+    border: 1px solid #ccc;
+    /* 设置边框为浅灰色 */
+    border-radius: 3px;
+    /* 添加圆角效果 */
+}
+
+/* 设置按钮的样式 */
+.login-container button {
+    width: 97%;
+    /* 按钮占满容器宽度 */
+    padding: 10px;
+    /* 添加内边距 */
+    background-color: #007BFF;
+    /* 按钮背景颜色为蓝色 */
+    color: #fff;
+    /* 按钮文字颜色为白色 */
+    border: none;
+    /* 移除按钮默认边框 */
+    border-radius: 3px;
+    /* 添加圆角效果 */
+    cursor: pointer;
+    /* 鼠标悬停时显示为手形 */
+}
+
+/* 设置按钮在悬停时的效果 */
+.login-container button:hover {
+    background-color: #0056b3;
+    /* 改变背景颜色为深蓝色 */
+}
+
+/*设置跳转网页的容器*/
+.change-pass {
+    display: flex;
+    /*摆放格式*/
+    justify-content: space-between;
+    /*均匀分布*/
+    margin-bottom: 1px;
+}
+
+.change-pass a {
+    color: #007BFF;
+    text-decoration: none;
+    /*去除链接下的字*/
+}
+
+.change-pass a:hover {
+    scale: 1.2;
+    color: red;
+}
