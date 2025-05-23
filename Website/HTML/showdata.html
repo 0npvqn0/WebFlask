@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head lang="zh-CN">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP01S显示</title>
+    <link rel="stylesheet" href="../CJI/CSS/showdata.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">温湿度显示：</h2>
+        <div class="scroll-container">
+            <ul id="data-list"></ul>
+        </div>
+        <div class="TH-container">
+            <form id="data-form" method="post" , action="{{url_for('change_data')}}">
+                <label class="TH-label">最高温度</label>
+                <input class="TH-input" type="text" name="TempH" id="TH" placeholder="请输入温度最高阈值" required>
+                <label class="TH-label">最低湿度</label>
+                <input class="TH-input" type="text" name="TempL" id="TL" placeholder="请输入温度最低阈值" required>
+                <label class="TH-label">最高湿度</label>
+                <input class="TH-input" type="text" name="RHH" id="RH" placeholder="请输入湿度最高阈值" required>
+                <label class="TH-label">最低湿度</label>
+                <input class="TH-input" type="text" name="RHL" id="RL" placeholder="请输入湿度最低阈值" required>
+                <button class="TH-button" type="submit">确定</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{url_for('static', filename='JS/showdata.js')}}"></script>
+</body>
+
+</html>
